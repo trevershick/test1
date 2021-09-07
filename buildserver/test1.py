@@ -1,11 +1,10 @@
 import sys, re
 from pyjenkins import *
-from pyjenkins_smb import *
 
-class TheBuild(PyJenkinsBuild):
-    def run(self):
-        print("Running My Build")
-        return Result.SUCCESS
+from trever_base import *
 
+class TheBuild(MyBuildClass):
+    def get_name(self):
+        return "Trever"
 
 register_pybuild( TheBuild() )
