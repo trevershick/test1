@@ -1,6 +1,6 @@
 from pyjenkins import *
 
-def MyBuildClass(PyJenkinsBuild):
+class MyBuildClass(PyJenkinsBuild):
     def __init__(self):
         pass
 
