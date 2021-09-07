@@ -5,5 +5,5 @@ class MyBuildClass(PyJenkinsBuild):
         pass
 
     def run(self):
-        print("Running My Build: " + self.get_name())
+        logger.println("Running My Build: " + self.get_name())
         return Result.SUCCESS
