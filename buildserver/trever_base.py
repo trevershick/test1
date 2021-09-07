@@ -1,7 +1,9 @@
 from pyjenkins import *
 
 def MyBuildClass(PyJenkinsBuild):
-    def run(self):
+    def __init__(self):
+        pass
 
-        print("Running My Build: ", self.get_name())
+    def run(self):
+        print("Running My Build: " + self.get_name())
         return Result.SUCCESS

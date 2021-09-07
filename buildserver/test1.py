@@ -4,6 +4,9 @@ from pyjenkins import *
 from trever_base import *
 
 class TheBuild(MyBuildClass):
+    def __init__(self, name):
+        pass
+
     def get_name(self):
         return "Trever"
 
